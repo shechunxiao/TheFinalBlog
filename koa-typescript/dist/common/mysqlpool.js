@@ -1,4 +1,3 @@
-"use strict";
 // import * as Mysql from 'mysql';
 // import { myLogger } from './mylogger';
 //

@@ -1,4 +1,3 @@
-"use strict";
 // import * as TCP from 'net';
 // import * as ProtoBuf from 'protobufjs';
 // import { myLogger } from './mylogger';

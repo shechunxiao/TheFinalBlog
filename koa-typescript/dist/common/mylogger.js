@@ -14,39 +14,39 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
     __setModuleDefault(result, mod);
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.myLogger = void 0;
-var log4js = __importStar(require("log4js"));
+const log4js = __importStar(require("log4js"));
 var LoggerInitedType;
 (function (LoggerInitedType) {
     LoggerInitedType[LoggerInitedType["CONSOLE"] = 1] = "CONSOLE";
     LoggerInitedType[LoggerInitedType["NORMAL"] = 2] = "NORMAL";
 })(LoggerInitedType || (LoggerInitedType = {}));
-var MyLogger = /** @class */ (function () {
-    function MyLogger() {
+class MyLogger {
+    constructor() {
         this.mainLogger = {};
     }
-    MyLogger.getInstance = function () {
+    static getInstance() {
         if (!this._instance) {
             this._instance = new MyLogger();
             this._instance.initConsole();
         }
         return this._instance;
-    };
-    MyLogger.prototype.initialize = function (config) {
+    }
+    initialize(config) {
         if (this.initedType == LoggerInitedType.NORMAL) {
             return;
         }
         this.initedType = LoggerInitedType.NORMAL;
         log4js.configure(config);
         this.mainLogger = log4js.getLogger();
-    };
-    MyLogger.prototype.initConsole = function () {
-        var config = {
+    }
+    initConsole() {
+        let config = {
             appenders: {
                 out: {
                     type: 'console'
@@ -62,85 +62,53 @@ var MyLogger = /** @class */ (function () {
         log4js.configure(config);
         this.mainLogger = log4js.getLogger();
         this.initedType = LoggerInitedType.CONSOLE;
-    };
-    MyLogger.prototype.warn = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
+    }
+    warn(...args) {
         if (!this.mainLogger.isWarnEnabled()) {
             return;
         }
         this.mainLogger.warn(this.writeLog(args));
-    };
-    MyLogger.prototype.trace = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
+    }
+    trace(...args) {
         if (!this.mainLogger.isTraceEnabled()) {
             return;
         }
         this.mainLogger.trace(this.writeLog(args));
-    };
-    MyLogger.prototype.log = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
-        this.info.apply(this, args);
-    };
-    MyLogger.prototype.fatal = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
+    }
+    log(...args) {
+        this.info(...args);
+    }
+    fatal(...args) {
         if (!this.mainLogger.isFatalEnabled()) {
             return;
         }
         this.mainLogger.fatal(this.writeLog(args));
-    };
-    MyLogger.prototype.error = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
+    }
+    error(...args) {
         if (!this.mainLogger.isErrorEnabled()) {
             return;
         }
         this.mainLogger.error(this.writeLog(args));
-    };
-    MyLogger.prototype.info = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
+    }
+    info(...args) {
         if (!this.mainLogger.isInfoEnabled()) {
             return;
         }
         this.mainLogger.info(this.writeLog(args));
-    };
-    MyLogger.prototype.debug = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
+    }
+    debug(...args) {
         if (!this.mainLogger.isDebugEnabled()) {
             return;
         }
         this.mainLogger.debug(this.writeLog(args));
-    };
-    MyLogger.prototype.writeLog = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
+    }
+    writeLog(...args) {
         if (!this.initedType) {
             console.log('error: ', 'logger is not inited');
         }
-        var str = '';
-        for (var i = 0; i < args.length; i++) {
-            var arg = args[i];
+        let str = '';
+        for (let i = 0; i < args.length; i++) {
+            let arg = args[i];
             if (i > 0) {
                 str += ' ';
                 if (typeof arg == 'object') {
@@ -160,8 +128,7 @@ var MyLogger = /** @class */ (function () {
             }
         }
         return str;
-    };
-    return MyLogger;
-}());
-var myLogger = MyLogger.getInstance();
+    }
+}
+let myLogger = MyLogger.getInstance();
 exports.myLogger = myLogger;

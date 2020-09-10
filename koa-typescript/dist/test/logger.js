@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var mylogger_1 = require("../common/mylogger");
+const mylogger_1 = require("../common/mylogger");
 // let config: Configuration = {
 //     appenders: {
 //         out: {

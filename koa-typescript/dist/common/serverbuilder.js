@@ -1,4 +1,3 @@
-"use strict";
 // import ServerBase from './serverbase';
 // import Utils from './utils';
 // import { ProcessEvent, ProcessMessageCmd } from './const';

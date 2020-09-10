@@ -1,13 +1,11 @@
-"use strict";
-var Greeter = /** @class */ (function () {
-    function Greeter(message) {
+class Greeter {
+    constructor(message) {
         this.greeting = message;
     }
-    Greeter.prototype.greet = function () {
+    greet() {
         return "Hello, " + this.greeting;
-    };
-    return Greeter;
-}());
-var greeter;
+    }
+}
+let greeter;
 greeter = new Greeter("world");
 console.log(greeter.greet());
