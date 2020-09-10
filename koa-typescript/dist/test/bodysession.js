@@ -114,7 +114,7 @@ router.post('/json', koaBody(), (ctx) => {
     console.log(ctx.request.body);
     ctx.body = ctx.request.body;
 });
-;
+
 app.use(router.routes());
 app.listen(3000);
 console.log('curl -i http://localhost:3000/users -d "name=test"');
