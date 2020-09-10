@@ -1,0 +1,27 @@
+{
+  "name": "honorofkings",
+  "version": "1.0.0",
+  "description": "Honor of kings server by Ewonder",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ewonder",
+  "license": "ISC",
+  "dependencies": {
+    "@types/fs-extra": "^5.0.4",
+    "@types/node": "^10.11.0",
+    "fs-extra": "^7.0.0",
+    "pmx": "^1.6.7",
+    "protobufjs": "^6.8.8",
+    "three": "^0.97.0",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "@types/async": "^2.0.49",
+    "log4js": "^3.0.5",
+    "mysql": "^2.16.0",
+    "request": "^2.88.0",
+    "ts-simple-ast": "^15.1.0"
+  }
+}
