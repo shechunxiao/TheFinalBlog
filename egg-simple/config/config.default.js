@@ -16,7 +16,10 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1600324030541_9587';
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = ['test'];
+  config.test ={
+    match: '/test',
+  };
 
   // add your user config here
   const userConfig = {
