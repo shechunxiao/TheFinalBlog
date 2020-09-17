@@ -1,2 +1,4 @@
 /koa-typescript/node_modules
 /.idea
+/egg-example/node_modules
+/egg-example/run
