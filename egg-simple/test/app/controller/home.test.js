@@ -12,6 +12,7 @@ describe('test/app/controller/home.test.js', () => {
   });
 
   it('should GET /', () => {
+    console.log('单元测试')
     return app.httpRequest()
       .get('/')
       .expect('hi, egg')

@@ -9,6 +9,7 @@ class TestserviceController extends Controller {
     let data = await this.service.user.find();
     console.log(data);
     ctx.body = data;
+    this.app.runSchedule('test');
     // ctx.body = 'hi, service';
   }
 }
