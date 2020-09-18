@@ -26,4 +26,10 @@ module.exports = app => {
   router.get('/getsession',controller.v1.session.getsession);
   router.get('/delsession',controller.v1.session.delsession);
   router.get('/validate',controller.v1.validate.index);
+  router.get('/http',controller.v1.http.index);
+  router.get('/service',controller.v1.testservice.index); //学习service
+
+
+
+
 };
