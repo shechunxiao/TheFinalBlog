@@ -20,6 +20,13 @@ module.exports = appInfo => {
   config.test ={
     match: '/test',
   };
+  config.security = {
+    csrf: false
+  };
+  config.multipart = {
+    mode: 'file',
+    fileExtensions: [ '.apk' ] // 增加对 apk 扩展名的文件支持
+  }
 
   // add your user config here
   const userConfig = {
