@@ -70,6 +70,7 @@ module.exports = appInfo => {
     // callbackURL: '/passport/github/callback',
     // proxy: false,
   };
+  // 静态资源，没搞懂
 
   // add your user config here
   const userConfig = {
