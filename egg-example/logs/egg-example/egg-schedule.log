@@ -43,3 +43,21 @@
 2020-09-17 13:47:03,082 INFO 10920 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
 2020-09-17 13:47:03,082 INFO 10920 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
 2020-09-17 13:47:03,082 INFO 10920 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-19 08:18:19,821 INFO 12792 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-19 08:18:19,821 INFO 12792 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-09-19 08:18:19,821 INFO 12792 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-19 08:18:20,346 INFO 16464 [Timer] F:\node\TheFinalBlog\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 72699657ms at 2020-09-20 04:30:00.003
+2020-09-19 08:18:20,346 INFO 16464 [Timer] F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 56499654ms at 2020-09-20 00:00:00.000
+2020-09-19 08:18:20,347 INFO 16464 [Timer] F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 56500654ms at 2020-09-20 00:00:01.001
+2020-09-19 08:18:22,094 INFO 2784 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-19 08:18:22,094 INFO 2784 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-09-19 08:18:22,094 INFO 2784 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-19 08:18:24,372 INFO 23536 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-19 08:18:24,372 INFO 23536 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-09-19 08:18:24,372 INFO 23536 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-09-19 08:19:12,228 INFO 26492 [Timer] F:\node\TheFinalBlog\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 72647775ms at 2020-09-20 04:30:00.003
+2020-09-19 08:19:12,229 INFO 26492 [Timer] F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 56447772ms at 2020-09-20 00:00:00.001
+2020-09-19 08:19:12,229 INFO 26492 [Timer] F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 56448771ms at 2020-09-20 00:00:01.000
+2020-09-19 08:19:11,967 INFO 17912 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-09-19 08:19:11,967 INFO 17912 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-09-19 08:19:11,967 INFO 17912 [egg-schedule]: register schedule F:\node\TheFinalBlog\egg-example\node_modules\egg-logrotator\app\schedule\rotate_by_file.js

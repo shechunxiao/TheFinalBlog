@@ -28,6 +28,16 @@ module.exports = app => {
   router.get('/validate',controller.v1.validate.index);
   router.get('/http',controller.v1.http.index);
   router.get('/service',controller.v1.testservice.index); //学习service
+  router.get('/module',controller.v1.module.index);
+  router.get('/50x',controller.v1.module.error);
+  router.get('/info',controller.v1.info.userinfo);
+  // 挂载鉴权路由
+  app.passport.mount('github');
+
+  // 上面的 mount 是语法糖，等价于
+  // const github = app.passport.authenticate('github', {});
+  // router.get('/passport/github', github);
+  // router.get('/passport/github/callback', github);
 
 
 
