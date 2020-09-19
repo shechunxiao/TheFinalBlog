@@ -1,5 +1,5 @@
 module.exports = {
-    formatUser() {
-        console.log('这里是helper')
-    }
+  formatUser() {
+    console.log('这里是helper');
+  },
 };
