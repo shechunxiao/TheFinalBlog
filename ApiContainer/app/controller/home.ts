@@ -9,4 +9,8 @@ export default class HomeController extends Controller {
     const { ctx } = this;
     ctx.body = '张三';
   }
+  public async page() {
+    const { ctx } = this;
+    await ctx.render('page');
+  }
 }
